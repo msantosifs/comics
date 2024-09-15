@@ -1,0 +1,33 @@
+.transcript-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+}
+
+.transcript-expanded {
+    max-height: none;
+}
+
+.transcript-collapsed {
+    max-height: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* max number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff!important;
+    border-color: #007bff;
+}
+
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+}

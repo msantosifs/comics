@@ -1,0 +1,23 @@
+/* ComicPagination.css */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.disabled-btn {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #f3f3f3;
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-button {
+        display: none;
+    }
+}
