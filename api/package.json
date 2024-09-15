@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node --watch src/server",
-    "dev": "node --watch --env-file=.env src/server"
+    "dev": "node --watch --env-file=.env src/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix web && npm run build --prefix web"
   },
   "dependencies": {
     "axios": "^1.7.7",
