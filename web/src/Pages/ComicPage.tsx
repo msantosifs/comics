@@ -3,7 +3,7 @@ import {Comic, ComicWrapper} from "../models/comic.models.ts";
 import Spinner from "../components/spinner/Spinner.tsx";
 import {Pagination} from "../components/pagination/Pagination.tsx";
 import './ComicPage.css'
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {Transcript} from "../components/transcript/Transcript.tsx";
 
 export const ComicPage = () => {
@@ -59,7 +59,7 @@ export const ComicPage = () => {
             if (wrapper.comic.img.length > 0) {
                 setIsImageLoading(true);
             }
-        } catch (err) {
+        } catch (err: any) {
             setError(err.message);
         } finally {
             setIsLoading(prevLoading => prevLoading - 1);

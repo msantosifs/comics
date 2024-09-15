@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/comicpage.tsx","./src/pages/notfoundpage.tsx","./src/components/pagination/pagination.tsx","./src/components/spinner/spinner.tsx","./src/components/transcript/transcript.tsx","./src/models/comic.models.ts"],"version":"5.6.2"}
